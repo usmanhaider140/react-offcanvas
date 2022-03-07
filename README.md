@@ -5,7 +5,7 @@ Off-canvas menus for React.
 ## Installation
 
 ```bash
-$ npm install --save react-offcanvas
+$ npm install --save react-off-canvas-2
 ```
 
 ## Usage
@@ -43,7 +43,7 @@ export default class App extends Component {
   componentWillMount() {
     // sets the initial state
     this.setState({
-      isMenuOpened: false
+      isMenuOpened: false,
     });
   }
 

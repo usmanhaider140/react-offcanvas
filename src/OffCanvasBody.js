@@ -1,7 +1,7 @@
 "use strict";
 
-import React, { PropTypes } from "react";
-
+import React from "react";
+import PropTypes from "prop-types";
 let OffCanvasBody = ({
   width = 250,
   transitionDuration = 250,
@@ -10,14 +10,14 @@ let OffCanvasBody = ({
   effect = "push",
   children,
   className,
-  style
+  style,
 }) => {
   // closed state style
   let translateX = position === "left" ? 0 : 0;
   let closedStyle = {
     transitionDuration: transitionDuration + "ms",
     transform: "translate(" + translateX + "px, 0px)",
-    backfaceVisibility: "hidden"
+    backfaceVisibility: "hidden",
   };
 
   // open state style
@@ -26,7 +26,7 @@ let OffCanvasBody = ({
   translateOpenX = effect === "overlay" ? 0 : translateOpenX;
 
   let openStyle = {
-    transform: "translate(" + translateOpenX + "px, 0px)"
+    transform: "translate(" + translateOpenX + "px, 0px)",
   };
 
   // create current state styles
@@ -48,7 +48,7 @@ OffCanvasBody.propTypes = {
   isMenuOpened: PropTypes.bool,
   position: PropTypes.oneOf(["left", "right"]),
   effect: PropTypes.oneOf(["push", "parallax", "overlay"]),
-  style: PropTypes.object
+  style: PropTypes.object,
 };
 
 export default OffCanvasBody;

@@ -1,6 +1,6 @@
 {
-  "name": "react-offcanvas",
-  "version": "0.4.0",
+  "name": "react-off-canvas-2",
+  "version": "0.4.1",
   "description": "Off-canvas menus for React.",
   "main": "lib/index.js",
   "files": [
@@ -8,9 +8,16 @@
     "LICENSE",
     "README.md"
   ],
+  "keywords": [
+    "react",
+    "react off-canvas",
+    "react-off-canvas-2",
+    "React Slider",
+    "slider"
+  ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:vutran/react-offcanvas.git"
+    "url": "git@github.com:usmanhaider140/react-offcanvas.git"
   },
   "scripts": {
     "clean": "rimraf lib",
@@ -29,9 +36,9 @@
   },
   "contributors": [
     {
-      "name": "Vu Tran",
-      "email": "vu.tran@thermofisher.com",
-      "url": "https://github.com/vutran/"
+      "name": "Vu Tran && Usman Haider",
+      "email": "usmanhaider461@gmail.com",
+      "url": "https://github.com/usmanhaider140/"
     }
   ],
   "license": "MIT",
@@ -58,7 +65,8 @@
     "style-loader": "^0.13.0",
     "webpack": "^1.12.14",
     "webpack-dev-middleware": "^1.5.1",
-    "webpack-hot-middleware": "^2.9.0"
+    "webpack-hot-middleware": "^2.9.0",
+    "prop-types": "^15.8.1"
   },
   "dependencies": {
     "react": "^0.14.7"
